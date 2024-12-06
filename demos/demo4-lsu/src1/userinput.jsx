@@ -7,9 +7,7 @@ export class UserInput extends Component{
     }
 
    handleInput(event){
-
-       
-        this.props.passname(event,event.target.value);
+        this.props.passname(event.target.value);
    }
 
    render(){

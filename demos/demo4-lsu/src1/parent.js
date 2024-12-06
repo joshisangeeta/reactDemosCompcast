@@ -8,10 +8,9 @@ export class Parent extends Component{
            this.state={
                 userName:''
            }
-           this.handleChange=this.handleChange.bind(this);
      }
 
-     handleChange(event,val){
+     handleChange(val){
          this.setState({userName:val})
      }
 
