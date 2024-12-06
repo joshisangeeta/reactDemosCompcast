@@ -1,0 +1,46 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+            <button onclick="sayHello()" >Click</button>
+            <div id="d1"></div>
+           <input type="text" id="t1"><br>
+           <select name="colors"  id="s1">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+           </select>
+
+
+           
+           <div id="d2">string here</div>
+
+    <script>
+        const select = document.getElementById("s1");
+        var color="blue"
+        var txt ="";
+        function sayHello(){
+             document.getElementById("d1").innerHTML = "Hello world"
+        }
+
+        select.addEventListener('change',function handleChange(event){
+                color = event.target.value;
+                console.log(color);
+                document.getElementById("d2").style.color = color;
+
+        } )
+      
+        document.getElementById("t1")
+
+        t1.addEventListener('change', function handleChange(event){
+            txt = event.target.value;
+            document.getElementById("d2").innerHTML= txt.toUpperCase();
+        })
+
+
+    </script>
+
+    </body>
+</html>
